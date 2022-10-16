@@ -1,11 +1,10 @@
 # StreamMovies
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.5.
-<img width="1507" alt="Screenshot 2022-10-15 at 12 29 03 AM" src="https://user-images.githubusercontent.com/54983940/195921531-af24ebe3-7841-4c7a-ab88-d1fa83392ba6.png">
 
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+![stream_movies](https://user-images.githubusercontent.com/54983940/196062370-c8e2c0e9-dab0-4142-8832-0191f28c50e1.png)
 
 ## Code scaffolding
 
