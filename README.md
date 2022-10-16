@@ -1,7 +1,8 @@
 # StreamMovies
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.5.
-<img width="1507" alt="Screenshot 2022-10-15 at 12 29 03 AM" src="https://user-images.githubusercontent.com/54983940/195921531-af24ebe3-7841-4c7a-ab88-d1fa83392ba6.png">
+![Stream-Movies Home Page](https://user-images.githubusercontent.com/54983940/196062172-b0c08433-16cb-403b-a214-89874a15a4dc.jpeg)
+
 
 ## Development server
 
