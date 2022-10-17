@@ -79,4 +79,14 @@
     -webkit-box-orient: vertical;
 }
 
+.full-star, .partial-star div{
+    background-attachment: fixed;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-color: aqua;
 
+}
+.partial-star div{
+    height: 100%;
+    overflow: hidden;
+}

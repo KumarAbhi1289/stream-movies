@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {MoviesDetailsService} from '../../services/movies-details.service';
 
 @Component({
   selector: 'app-home',
@@ -7,11 +8,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  constructor(private moviesDetails: MoviesDetailsService) { }
+
+  listOfMovies:Array<object> = this.moviesDetails.movieData;
+  movieType:String[] = this.moviesDetails.getType(this.listOfMovies);
+  carouselData:Array<Object> = this.moviesDetails.corouselData;
+  upcommingMovies:Array<object> = this.moviesDetails.commingSoonMovies;
+
 
   ngOnInit(): void {
+    console.log(this.movieType)
+    console.log(this.listOfMovies)
   }
-
   moviesList = [
     {
       id: 1,
@@ -44,6 +52,7 @@ export class HomeComponent implements OnInit {
       description: "A down-on-his-luck hound finds himself in a town full of cats who need a hero to defend them from a ruthless villain's evil plot to wipe their village off the map. With help from a reluctant trainer, the underdog must assume the role of fearsome samurai and team up with the felines to save the day. The only problem is -- they all hate dogs."
     }
   ]
+
 
   typesOfMovies = ['Upcomming Movies', 'Trending Movies', 'Horror Movies']
 

@@ -25,6 +25,10 @@ import { CardComponent } from './utilities/card/card.component';
 import { CardListComponent } from './components/card-list/card-list.component';
 import { ViewAllComponent } from './components/view-all/view-all.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
+import { BackgroundPageComponent } from './components/background-page/background-page.component';
+import { PlayVideoComponent } from './components/play-video/play-video.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { YearPipe } from './pipes/year.pipe';
 
 @NgModule({
   declarations: [
@@ -45,6 +49,10 @@ import { PageNotFoundComponent } from './components/page-not-found/page-not-foun
     CardListComponent,
     ViewAllComponent,
     PageNotFoundComponent,
+    BackgroundPageComponent,
+    PlayVideoComponent,
+    FooterComponent,
+    YearPipe,
   ],
   imports: [
     BrowserModule,
