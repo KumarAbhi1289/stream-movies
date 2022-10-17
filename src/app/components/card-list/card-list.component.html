@@ -1,0 +1,25 @@
+<div class="card-list">
+    <div class="card-element">
+
+        <div class="icons">
+            <div class="slider left-arrow">
+                <mat-icon class="slider-btn">keyboard_arrow_left</mat-icon>
+            </div>
+            
+            <div class="slider right-arrow">
+                <mat-icon class="slider-btn">keyboard_arrow_right</mat-icon>
+            </div>
+            
+        </div>
+        <div class="list-heading flex ">
+            <h1>{{movieType}}</h1>   
+            <button mat-button class="view-all" (click)="openInNewTab('view-all/'+movieType)" routerLink="view-all/{{movieType}}">View All</button> 
+        </div>
+        <div class="list-item">
+            <app-card></app-card>
+            <app-card></app-card>
+            <app-card></app-card>
+            <app-card></app-card>
+        </div>
+    </div>
+</div>

@@ -1,1 +1,65 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+/* .material-icons{
+    line-height: 1.24 !important;
+} */
+html {
+    scroll-behavior: smooth;
+  }
+
+.btn{
+    font-size: .75em;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    overflow: hidden;
+     background: #e50914;
+    color: #fff;
+    width: 10rem;
+    border-radius: 0 !important;
+}
+.btn:hover{
+    background: #bf000a;
+    background: var(#bf000a);
+    border: 0.0625em solid #bf000a;
+    border: 0.0625em solid var(#bf000a);
+    -webkit-transition: color .3s ease;
+    transition: color .3s ease;
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(0.0625em) translateZ(0);
+    transform: perspective(0.0625em) translateZ(0);
+    -webkit-box-shadow: 0 0 0.0625em transparent;
+    box-shadow: 0 0 0.0625em transparent;
+    position: relative;
+    border-radius: 0.3125em;
+}
+
+
+.flex{
+    display: flex;
+}
+
+.item-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+::-webkit-scrollbar {
+    width: 0.2rem;
+}
+::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 1);
+  }
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(68, 5, 5); 
+  }
