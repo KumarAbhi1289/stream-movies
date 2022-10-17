@@ -1,0 +1,92 @@
+.carousel-image, .black-shade{
+    width: 100vw;
+    height: 90vh;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.black-shade{
+    z-index: 1;
+    position: absolute;
+    background-image: linear-gradient(to right, rgba(0,0,0,1) 20%, rgba(0,0,0,0.1));
+}
+
+.carousel-discreption{
+    position: absolute;
+    z-index: 2;
+    width: 50%;
+    color: #fff;
+    top: 50%;
+    left: 5%;
+    transform: translate(0, -50%);
+    overflow: hidden;
+}
+.title{
+    text-transform: uppercase;
+    font-size: 5rem;
+    padding: 2rem 0 4rem 0;
+    font-weight: 800;
+    line-height: 1;
+}
+.imdb{
+    margin-left: 2rem;
+}
+
+.movie-title{
+    /* background: url(https://wordpress.iqonic.design/product/wp/streamit/wp-content/themes/streamit-theme/assets/images/redux/texure.jpg); */
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+
+}
+.rating{
+    font-size: 1.2rem;
+    margin-bottom: 0.7rem;
+}
+
+.about-movie{
+    margin-bottom: 1.4rem;
+}
+.durations-and-relaese-month{
+    margin-bottom: 2rem;
+    align-items: center;
+}
+
+.durations-and-relaese-month .duration{
+    margin: 0 1rem 0 1rem;
+}
+
+.durations-and-relaese-month .age-reistriction{
+    padding: 8px;
+    font-weight: 700;
+    background-color: gray;
+    text-align: center;
+}
+
+.movie-title {
+    background: url(../../../assets/texture-img.jpeg);
+    background-repeat: repeat-x;
+    background-position: center;
+    color: transparent;
+    -webkit-font-smoothing: antialiased;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+}
+
+.full-star, .partial-star div{
+    background-attachment: fixed;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-color: aqua;
+
+}
+.partial-star div{
+    height: 100%;
+    overflow: hidden;
+}

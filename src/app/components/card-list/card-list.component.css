@@ -1,0 +1,64 @@
+.card-list{
+    padding-top: 8rem;
+    display: flex;
+    justify-content: center;
+    background-color: var(--dark);
+}
+.card-element{
+    width: 88.5vw;
+    position: relative;
+}
+.card-element .list-heading{
+    color: #fff;
+    padding-bottom: 0.2rem;
+}
+.card-element .list-heading h1{
+    font-size: 2rem;
+}
+.item-lists{
+    position: relative;
+}
+.list-item{
+    display: flex;
+    justify-content: space-between;
+}
+.icons{
+    display: flex;
+    justify-content: space-between;
+}
+.icons .slider-btn{
+    color: ghostwhite;
+    position: absolute;
+    cursor: pointer;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.left-arrow{
+    left: 0%;
+}
+.right-arrow{
+    right: 0%;
+}
+
+.slider{
+    width: 2rem;
+    height: 4rem;
+    z-index: 100000;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    bottom: 15%;
+}
+
+.list-heading{
+    justify-content: space-between;
+    align-items: center;
+}
+.list-heading .view-all{
+    color: #e50914;
+    font-weight: 600;
+    font-size: 1rem;
+    letter-spacing: 0.063em;
+    cursor: pointer;
+}

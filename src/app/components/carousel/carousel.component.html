@@ -1,0 +1,92 @@
+<ngb-carousel
+  *ngIf="images"
+  class="carousel"
+  [showNavigationArrows]="showNavigationArrows"
+  [showNavigationIndicators]="showNavigationIndicators"
+>
+<!-- Modal -->
+
+  <!-- <div class="modal-template">
+    <ng-template #content let-modal>
+      <div class="modal-header">
+        <h4 class="modal-title">Modal title</h4>
+        <button
+          type="button"
+          class="btn-close"
+          aria-label="Close"
+          (click)="modal.dismiss('Cross click')"
+        ></button>
+      </div>
+      <div class="modal-body">
+        <video controls>
+          <source src="../../../assets/video1.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <div class="modal-footer">
+        <button
+          type="button"
+          class="btn btn-light"
+          (click)="modal.close('Close click')"
+        >
+          Close
+        </button>
+      </div>
+    </ng-template>
+  </div> -->
+
+  
+  <ng-template ngbSlide *ngFor="let data of movieList">
+    <div class="carousel-discreption">
+      <div class="title movie-title">{{ data.name }}</div>
+      <div class="rating flex">
+        <div
+          class="star flex"
+          *ngFor="let star of counter(lastIndexOfRating(data.rating)); let i = index"
+        >
+        <div *ngIf="isLastStar(data.rating, i); else elseBlock">
+          <div class="partial-star">
+            <div [style]="getColorFillPercentageOfStar">
+              <mat-icon>star</mat-icon>
+            </div>
+            
+          </div>
+        </div>
+        <ng-template #elseBlock>
+          <div class="full-star">
+            <div>
+              <mat-icon>star</mat-icon>
+            </div>
+          </div>
+        </ng-template>
+          
+        </div>
+        <span class="imdb item-center">{{ data.rating }}/10 IMDb</span>
+      </div>
+      <div class="durations-and-relaese-month flex">
+        <div class="age-reistriction item-center">
+          {{ data.ageRistriction }}
+        </div>
+        <div class="duration">{{ data.duration }}</div>
+        <div class="release-month">{{ data.releaseingYear }}</div>
+      </div>
+      <div class="about-movie">{{ data.description }}</div>
+      <button
+        class="btn button-hover"
+        mat-raised-button
+        (click)="openModal(data.name)"
+      >
+        <mat-icon>play_arrow</mat-icon>
+        Play now
+      </button>
+    </div>
+    <div class="picsum-img-wrapper">
+      <div class="black-shade"></div>
+      <img
+        [src]="assetPath + '' + data.thumbnilPath"
+        class="carousel-image"
+        alt="Random slide"
+      />
+    </div>
+  </ng-template>
+</ngb-carousel>

@@ -1,0 +1,21 @@
+<div class="card">
+    <div class="card-discreption">
+      <p class="card-written-element title">{{movieData.name}}</p>
+      <p class="card-written-element duration">{{movieData.duration}}</p>
+      <div *ngIf="isUpcomming(movieData); else elseBlock">
+        <button class="btn button-hover" mat-raised-button (click)="openModal(title)"> 
+            Details
+        </button>
+      </div>
+      <ng-template #elseBlock>
+        <button class="btn button-hover" mat-raised-button (click)="openModal(title)"> 
+            <mat-icon>play_arrow</mat-icon>
+            Play now
+        </button>
+      </ng-template>
+      
+    </div>
+    <div class="black-shade">
+    </div>
+    <img mat-card-image class="image-size-full card-img " [src]="assetPath+movieData.thumbnilPath" alt="Photo of a Shiba Inu">
+</div>

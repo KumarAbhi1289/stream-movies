@@ -1,0 +1,6 @@
+<app-carousel [movieList]="carouselData"></app-carousel>
+<app-card-list [movieType]="'Upcomming'" [movieData]="upcommingMovies"></app-card-list>
+<div *ngFor="let type of movieType">
+    <app-card-list [movieType]="type" [movieData]="listOfMovies"></app-card-list>
+</div>
+<div class="end-card-list"></div>

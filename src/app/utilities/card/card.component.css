@@ -1,0 +1,70 @@
+.image-size-full,  .black-shade{
+    width: 100%;
+    height: 100%;
+}
+
+.card, .card-img{
+    border-radius: 0 !important;
+}
+
+.card, .black-shade{
+    transition: all .5s ease-in-out;
+}
+.card{
+    width: 19.9rem;
+    height: 11rem;
+    overflow: hidden;
+    position: relative;
+    border: none;
+}
+
+.title {
+    text-transform: uppercase;
+    font-size: 5rem;
+    padding: 2rem 0 1rem 0;
+    font-weight: 800;
+    line-height: 1;
+    }
+
+.card:hover .black-shade{
+    border-left: #bf000a .25rem solid;
+    background-color: rgba(0, 0, 0, 0.83);
+}
+
+.card:hover{
+    transform: scale(1.1);
+    z-index: 1000;
+}
+.card-img {
+    position: absolute;
+    top: 0;
+}
+.black-shade{
+    z-index: 1;
+    background-image: linear-gradient(to right, rgba(0,0,0,0.8) 10%, rgba(0,0,0,0.1) 90%);
+    
+}
+.card-discreption{
+    position: absolute;
+    z-index: 100;
+    color: #fff;
+    display: block;
+    top: 50%;
+    left: 6%;
+    transform: translate(0%, -50%);
+}
+
+.card-written-element{
+    
+    text-overflow: ellipsis;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    letter-spacing: -.02rem;
+    margin: -0.2rem, 0;
+}
+
+.title{
+    font-size: 1.5rem;
+}
+
+

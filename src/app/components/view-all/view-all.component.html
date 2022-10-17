@@ -1,0 +1,24 @@
+<section>
+    <div class="container-box">
+        <div class="black-overlay">
+        </div>
+        <div class="banner">
+            <img class="view-all-bg" src="../../../assets/view-all-bg.webp" alt="View all">
+        </div>
+        
+        <div class="view-all-heading">
+            <h1>{{urlValue[0]}} -> {{urlValue[1]}} </h1>
+        </div>
+    </div>
+    <div class="show-list container-padding">
+        <div class="list-name movie-type">
+            <h1>{{urlValue[1]}}</h1>
+        </div>
+        <div class="item-list">
+            <div *ngFor="let movie of perticularCategoryMovies">
+                <app-card class="item" [movieData]="movie"></app-card>
+            </div>
+        </div>
+
+    </div>
+</section>

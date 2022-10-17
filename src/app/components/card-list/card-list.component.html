@@ -1,0 +1,25 @@
+<div class="card-list container-padding">
+    <div class="card-element">
+        <div class="list-heading flex ">
+            <h1>{{movieType}}</h1>   
+            <button mat-button class="view-all" routerLink="view-all/{{movieType}}">View All</button> 
+        </div>
+        <div class="items-lists">
+            <div class="icons">
+                <div class="slider left-arrow">
+                    <mat-icon class="slider-btn">keyboard_arrow_left</mat-icon>
+                </div>
+                
+                <div class="slider right-arrow">
+                    <mat-icon class="slider-btn">keyboard_arrow_right</mat-icon>
+                </div>
+            </div>
+            <div class="list-item">
+                <div *ngFor="let movie of getMovieObject(movieData, movieType)">
+                    <app-card [movieData]="movie" ></app-card>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</div>

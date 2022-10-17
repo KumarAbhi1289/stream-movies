@@ -1,0 +1,24 @@
+<div ngbNav #nav="ngbNav" class="nav-tabs">
+  <div class="nav-title" routerLink=""><b>Stream Movies</b></div>
+  <div class="flex">
+    <li ngbNavItem>
+      <a ngbNavLink routerLink="">Home</a>
+    </li>
+    <div *ngFor="let route of categoryUrlRoute">
+      <li ngbNavItem (click)="refreshPage()">
+        <a ngbNavLink routerLink={{route.path}} >{{route.name}} </a>
+      </li>
+    </div>
+  </div>
+  <div class="flex">
+    <div class="search-bar"><input type="text"> <mat-icon class="search-icon">search-bar</mat-icon></div>
+    <div>
+      <li ngbNavItem>
+        <a ngbNavLink routerLink="play-video">Login</a>
+      </li>
+    </div>
+  </div>
+
+</div>
+<div [ngbNavOutlet]="nav"></div>
+<div class="nav-bar"></div>
